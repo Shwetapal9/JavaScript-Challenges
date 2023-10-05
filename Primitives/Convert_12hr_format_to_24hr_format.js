@@ -10,7 +10,7 @@ function convertTo24HrsFormat(time) {
     hrs = hrs == 12 ? hrs : String(+hrs + 12);
   }
   //   console.log(hrs);
-    return hrs.padStart(2, 0) + ":" + min.slice(0, -2).padStart(2, 0);
+    return hrs.padStart(2, 0) + ":" + min.slice(0, -2).padStart(2, 0); //An extra 0 would be needed if the hours have single digit
 //   return `${hrs}:${min.slice(0, -2)}`;
 }
 console.log(convertTo24HrsFormat("12:10AM")); // 00:10
